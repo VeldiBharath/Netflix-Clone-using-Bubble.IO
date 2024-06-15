@@ -5,6 +5,10 @@ Netflix Clone using No Code Environment
 # Netflix clone build
 
 ## Database
+# Before going into this project lets create a database structure. All we have to know is to have some meaningful datatypes and datafields. We want to make sure if the datatype is gooing to be large we might have to breakdown to create a new datatype so that the overall application performance will be high.
+# It is better not to use plurals to name datatypes to avoid confusion when we actually store data in it.
+# Option Set is a feature that allows you to define a list of static choices that can be used throughout your application. These choices are ideal for values that don’t change frequently, such as categories, status indicators, or predefined lists. Option Sets provide a way to ensure data consistency and can simplify the process of managing static data.
+# Options sets dont read from database and hence faster to execute. They are quick to add/change new options. They are accessible anywhere in our app. They are not private and we dont want to put sensitive data. When we add an optionset we must redeploy to see those changes. 
 
 ## User
 
@@ -14,7 +18,7 @@ Netflix Clone using No Code Environment
 - [ ]  Profile type - Linked to profile type option set with default of user
 
 ## Content
-
+# Movie or TVShow
 - [ ]  Title
 - [ ]  Thumbnail image
 - [ ]  Description
